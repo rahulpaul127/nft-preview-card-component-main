@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+    <!-- NFT Image with hover overlay -->
+    <a href="#" class="card__image-wrapper" aria-label="View Equilibrium #3429">
+      <img
+        src="./images/image-equilibrium.jpg"
+        alt="Equilibrium #3429 — a glowing 3D cube"
+        class="card__image"
+        width="302"
+        height="302"
+      >
+      <div class="card__image-overlay" aria-hidden="true">
+        <img src="./images/icon-view.svg" alt="" class="card__view-icon">
+      </div>
+    </a>
+
+    <!-- Card Content -->
+    <div class="card__body">
+      <h1 class="card__title">
+        <a href="#" class="card__title-link">Equilibrium #3429</a>
+      </h1>
+
+      <p class="card__description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <div class="card__meta">
+        <span class="card__price">
+          <img src="./images/icon-ethereum.svg" alt="Ethereum" class="card__meta-icon">
+          0.041 ETH
+        </span>
+        <span class="card__time">
+          <img src="./images/icon-clock.svg" alt="Clock" class="card__meta-icon">
+          3 days left
+        </span>
+      </div>
+    </div>
+
+    <hr class="card__divider">
+
+    <!-- Creator -->
+    <div class="card__creator">
+      <img
+        src="./images/image-avatar.png"
+        alt="Jules Wyvern avatar"
+        class="card__avatar"
+        width="33"
+        height="33"
+      >
+      <p class="card__creator-text">
+        Creation of <a href="#" class="card__creator-link">Jules Wyvern</a>
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>
